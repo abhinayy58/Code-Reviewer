@@ -33,6 +33,7 @@ function App() {
       });
       setReview(response.data);
     } catch (error) {
+      console.error("Error fetching review:", error);
       setReview("Error fetching review.");
     } finally {
       setLoading(false);
